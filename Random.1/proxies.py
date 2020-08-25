@@ -65,7 +65,7 @@ def VerificationProxys():
         s.get(login_api_schema)
         s.headers['Origin'] = 'https://m.zalando.fr'
         login_data = {"username": "nameb86952@icanav.net", "password": "Dubai007", "wnaMode": "modal"}
-        r = s.post('https://www.zalando.fr/api/reef/login', json=login_data, verify=False)
+        r = s.post(login_api_post, json=login_data, verify=False)
         print(r)
         s.headers.clear()
         s.headers = {
