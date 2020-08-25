@@ -31,9 +31,11 @@ def generateur_mail():
     }
 
     r = requests.get('https://temp-mail.org/fr/', cookies=cookies)
+    print(r)
 
     return email
 
 
-mail = generateur_mail()
-print(mail)
+print(generateur_mail())
+print(type(generateur_mail()))
+

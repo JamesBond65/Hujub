@@ -30,8 +30,9 @@ def mise_a_jour():
     Nom_application='ScredAIO'
 
     try:
+        #token = 'token a2fce3ce396b83dec87df039eb7531f201bac641'
         headers = {
-                    'Authorization': 'token a2fce3ce396b83dec87df039eb7531f201bac641',
+                    'Authorization': token,
                     'Accept': 'application/vnd.github.v3.raw',
                         }
 
@@ -52,7 +53,7 @@ def mise_a_jour():
                 #print(filename)
                 
                 headers = {
-                    'Authorization': 'token a2fce3ce396b83dec87df039eb7531f201bac641',
+                    'Authorization': token,
                     'Accept': 'application/vnd.github.v3.raw',
                         }
 
@@ -85,7 +86,3 @@ def mise_a_jour():
             
     except Exception as e:
         messagebox.showinfo('Software Update', 'Unable to Check for Update, Error:' + str(e))
-
-mise_a_jour()
-
-print('Ca fonctionne !')
